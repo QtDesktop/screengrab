@@ -221,5 +221,9 @@ install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/docs/html" DESTINATION "${CMAKE_I
 install(FILES ${SCREENGRAB_CONFIG_FILES} DESTINATION ${CMAKE_INSTALL_DATADIR}/${PROJECT_NAME})
 # install desktop files
 install(FILES ${SCREENGRAB_DESKTOP_FILES} DESTINATION ${CMAKE_INSTALL_DATADIR}/applications)
-# install pixmap
+# install icons
+install(FILES "${CMAKE_CURRENT_SOURCE_DIR}/img/trayicon.png" DESTINATION "${CMAKE_INSTALL_DATADIR}/icons/hicolor/16x16/apps")
 install(FILES "${CMAKE_CURRENT_SOURCE_DIR}/img/screengrab.png" DESTINATION "${CMAKE_INSTALL_DATADIR}/icons/hicolor/32x32/apps")
+install(FILES "${CMAKE_CURRENT_SOURCE_DIR}/img/screengrab-48.png" DESTINATION "${CMAKE_INSTALL_DATADIR}/icons/hicolor/48x48/apps")
+install(FILES "${CMAKE_CURRENT_SOURCE_DIR}/img/screengrab-64.png" DESTINATION "${CMAKE_INSTALL_DATADIR}/icons/hicolor/64x64/apps")
+install(FILES "${CMAKE_CURRENT_SOURCE_DIR}/img/logo.png" DESTINATION "${CMAKE_INSTALL_DATADIR}/icons/hicolor/72x72/apps" RENAME "screengrab.png")
